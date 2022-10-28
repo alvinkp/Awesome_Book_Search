@@ -15,4 +15,11 @@ const typeDefs = gql`
     link: String
     title: String!
   }
+
+  #Queries
+  type Query {
+    getSingleUser: User!
+  }
 `;
+
+module.exports = { typeDefs };
