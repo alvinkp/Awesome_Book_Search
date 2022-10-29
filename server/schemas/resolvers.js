@@ -2,11 +2,11 @@ const { User } = require("../models");
 
 const resolvers = {
   Query: {
-    getSingleUser: async (parent, { username }) => {
-      const params = username ? { username } : {};
+    getSingleUser: async (parent, { _id }) => {
+      const params = _id ? { _id } : {};
       return User.find(params);
     },
   },
 };
 
-module.exports = { resolvers };
+module.exports = resolvers;

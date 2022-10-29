@@ -7,19 +7,9 @@ const typeDefs = gql`
     password: String!
   }
 
-  type Book {
-    authors: String
-    description: String!
-    bookId: String!
-    image: String
-    link: String
-    title: String!
-  }
-
-  #Queries
   type Query {
-    getSingleUser: User!
+    getSingleUser: User
   }
 `;
 
-module.exports = { typeDefs };
+module.exports = typeDefs;
